@@ -305,24 +305,9 @@ body {
   grid-gap: 15px;
   grid-template-columns: repeat(5, 1fr);
 }
-@media screen and (max-width: 1199px) {
-  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 @media screen and (max-width: 991px) {
   .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 767px) {
-  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 490px) {
-  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards {
-    grid-template-columns: 1fr;
   }
 }
 .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card {
@@ -335,9 +320,25 @@ body {
   background-color: rgb(63, 70, 78);
   box-shadow: 0px 3px 34.96px 3.04px rgba(0, 0, 0, 0.35);
 }
+@media screen and (max-width: 767px) {
+  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card {
+    border-radius: 30px;
+  }
+}
 .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card img {
   padding-top: 25px;
   padding-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card img {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card img {
+    padding-bottom: 0;
+  }
 }
 .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card p {
   font-family: "Lato", sans-serif;
@@ -345,6 +346,19 @@ body {
   color: rgb(255, 255, 255);
   font-weight: 700;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card p {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mm-system-and-transaction .mm-system .mm-work-system .body-content .cards .system-card p {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 .mm-system-and-transaction .mm-system .warning-content {
   padding-top: 100px;
